@@ -30,6 +30,18 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
+## Usage
+Once the server is up and running, you need to scan the QR code from the terminal using your WhatsApp mobile app to authenticate and establish a connection.
+![image](https://github.com/segovia99/nest-whatsapp-api/assets/72715105/9ff4c6eb-d7bb-415c-8b5c-22d664e1f57c)
+you can send a message by making a POST request to http://localhost:3000/api/v1/sendmessage with the following JSON payload:
+
+```json
+{
+  "phone": "number phone",
+  "message": "Hello"
+}
+```
+
 
 
 
